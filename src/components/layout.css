@@ -1,3 +1,28 @@
+:root {
+  --color: #ffff01;
+  --hero-bg: rgba(255, 255, 80, 0.7);
+  --hero-title-color: inherit;
+}
+
+.alpha {
+  --color: #d42f33;
+  --hero-title-bg: rgba(253, 48, 48, 0.7);
+  --hero-overlay-bg: rgba(230, 17, 17, 0.4);
+}
+
+.beta {
+  --color: #207af5;
+  --hero-title-bg: rgba(30, 60, 228, 0.7);
+  --hero-overlay-bg: rgba(17, 181, 230, 0.4);
+}
+
+.omega {
+  --color: #f5c45b;
+  --hero-title-bg: rgba(245, 196, 91, 0.7);
+  --hero-title-color: #333333;
+  --hero-overlay-bg: rgba(227, 230, 17, 0.4);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -19,13 +44,6 @@ body {
 ::selection {
   background-color: var(--color);
   color: #111111;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Montserrat', sans-serif;
 }
 
 a {

@@ -16,10 +16,6 @@
           padding: 0;
       }
 
-      h2 {
-          @extend .feature_title;
-      }
-
       .form-group {
           display: flex;
           max-width: 500px;
@@ -36,8 +32,6 @@
       }
 
       .button {
-          @extend .btn;
-          @extend .btn-primary;
           font-size: inherit;
           height: auto;
       }

@@ -1,6 +1,9 @@
 import PropTypes from "prop-types"
 import React from "react"
 
+import Heading from "../../components/Heading"
+import "./styles.css"
+
 function Feature(props) {
 
   const {
@@ -25,21 +28,19 @@ function Feature(props) {
         <div className="feature_body">
 
           {subtitle && 
-            <h4 className="feature_subtitle">
+            <Heading level="4" className="feature_subtitle">
               {subtitle}
-            </h4>
+            </Heading>
           }
 
           {title &&
-            <h3 className="feature_title">
+            <Heading level="3" className="feature_title">
               {title}
-            </h3>
+            </Heading>
           }
 
           {description &&
-            <div>
-              {description}
-            </div>
+            <div dangerouslySetInnerHTML={{__html: description}}></div>
           }
 
           {action && url &&
