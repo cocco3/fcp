@@ -11,7 +11,7 @@ function Heading(props) {
     ...restProps
   } = props
 
-  const Element = `H${level}`
+  const Element = `h${level}`
 
   return (
     <Element {...restProps}>

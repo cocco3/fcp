@@ -16,7 +16,7 @@ function Mailchimp() {
             
             <div className="mc-field-group">
               
-              <label for="mce-EMAIL">
+              <label htmlFor="mce-EMAIL">
                 Email Address  <span className="asterisk" aria-hidden="true">*</span>
               </label>
               
