@@ -1,35 +1,35 @@
 .footer {
-  font-size: 0.8rem;
   padding-bottom: 12px;
   padding-top: 12px;
 }
 
-.footer ul {
+.footer_links {
+  font-size: 0.8rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footer li {
+.footer_links li {
   display: inline-block;
   padding: 0 16px;
 }
 
-.footer li:first-child {
+.footer_links li:first-child {
   padding-left: 0;
 }
 
-.footer li + li {
+.footer_links li + li {
   border-left: 1px solid #848484;
   line-height: 18px;
 }
 
 @media (max-width: 575px) {
-  .footer {
-      font-size: 0.7rem;
+  .footer_links {
+    font-size: 0.7rem;
+  }
 
-      li {
-          padding: 0 12px;
-      }
+  .footer_links li {
+    padding: 0 12px;
   }
 }

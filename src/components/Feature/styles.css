@@ -49,18 +49,11 @@
   width: 50%;
 }
 
-
-/**
-* Every even child, the image goes on the right
-*/
-.features-alternate {
-
-  .feature:nth-child(even) .feature_img {
-      order: 1;
-      padding: 0 0 0 48px;
+@media (min-width: 576px) and (max-width: 799px) {
+  .feature_img {
+    flex-basis: 50%;
   }
 }
-
 
 @media (max-width: 575px) {
 
