@@ -1,8 +1,13 @@
 import dayjs from "dayjs"
 import React from "react"
 
-import Feature from "../../components/Feature"
-import Layout from "../../components/layout"
+import {
+  Feature,
+  Heading,
+  Layout,
+  Section
+} from "../../components"
+
 import SEO from "../../components/seo"
 
 import data from "./data"
@@ -37,18 +42,23 @@ function Events() {
     <Layout>
       <SEO title="Events" />
 
-      <Feature
-        action="Get Tickets"
-        description={featuredEvent.description}
-        img={featuredEvent.img}
-        subtitle={dayjs(featuredEvent.date).format("MMMM DD, YYYY")}
-        title={featuredEvent.name}
-        url={featuredEvent.url}
-      />
+      <Section>
+        <Feature
+          action="Get Tickets"
+          description={featuredEvent.description}
+          img={featuredEvent.img}
+          subtitle={dayjs(featuredEvent.date).format("MMMM DD, YYYY")}
+          title={featuredEvent.name}
+          url={featuredEvent.url}
+        />
+      </Section>
 
-      <div className="grid">
-        {allPastEvents}
-      </div>
+      <Section>
+        <Heading level={3}>Past Events</Heading>
+        <div className="grid">
+          {allPastEvents}
+        </div>
+      </Section>
     </Layout>
   )
 }

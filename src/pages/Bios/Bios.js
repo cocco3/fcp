@@ -1,7 +1,11 @@
 import React from "react"
 
-import Feature from "../../components/Feature"
-import Layout from "../../components/layout"
+import {
+  Feature,
+  Layout,
+  Section
+} from "../../components"
+
 import SEO from "../../components/seo"
 
 import data from "./data"
@@ -11,12 +15,14 @@ function Bios() {
   const allBios = data
     .map((value, index) => {
       return (
-        <Feature
-          description={value.description}
-          img={value.img}
-          title={value.name}
-          key={index}
-        />
+        <Section>
+          <Feature
+            description={value.description}
+            img={value.img}
+            title={value.name}
+            key={index}
+          />
+        </Section>
       )
     })
 

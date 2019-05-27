@@ -1,11 +1,3 @@
-.feature {
-  margin: 72px 0;
-}
-
-.feature::after {
-  @include clearfix;
-}
-
 .feature_wrap {
   display: flex;
   flex-direction: row;
@@ -37,16 +29,6 @@
 .feature_subtitle {
   font-weight: normal;
   margin: 12px 0;
-}
-
-.feature + .feature::before {
-  background: #eaeaea;
-  content: '';
-  display: block;
-  height: 1px;
-  margin: 72px auto;
-  text-align: center;
-  width: 50%;
 }
 
 @media (min-width: 576px) and (max-width: 799px) {

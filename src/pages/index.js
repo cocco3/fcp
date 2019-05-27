@@ -1,8 +1,12 @@
 import dayjs from "dayjs"
 import React from "react"
 
-import Feature from "../components/Feature"
-import Layout from "../components/layout"
+import {
+  Feature,
+  Layout,
+  Section
+} from "../components"
+
 import SEO from "../components/seo"
 
 import eventsData from "../pages/Events/data"
@@ -23,28 +27,34 @@ function IndexPage() {
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-      <Feature
-        action="Get Tickets"
-        description={featuredEvent.description}
-        img={featuredEvent.img}
-        subtitle={dayjs(featuredEvent.date).format("MMMM DD, YYYY")}
-        title={featuredEvent.name}
-        url={featuredEvent.url}
-      />
+      <Section>
+        <Feature
+          action="Get Tickets"
+          description={featuredEvent.description}
+          img={featuredEvent.img}
+          subtitle={dayjs(featuredEvent.date).format("MMMM DD, YYYY")}
+          title={featuredEvent.name}
+          url={featuredEvent.url}
+        />
+      </Section>
 
-      <Feature
-        action="View Photos"
-        description={pastEvent}
-        img="images/group-2019-alpha.jpg"
-        title="Thanks for coming out!"
-        url="https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=873080926365659"
-      />
+      <Section>
+        <Feature
+          action="View Photos"
+          description={pastEvent}
+          img="images/group-2019-alpha.jpg"
+          title="Thanks for coming out!"
+          url="https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=873080926365659"
+        />
+      </Section>
 
-      <Feature
-        description={aboutThePack}
-        img="images/group-about.jpg"
-        title="About the Pack"
-      />
+      <Section>
+        <Feature
+          description={aboutThePack}
+          img="images/group-about.jpg"
+          title="About the Pack"
+        />
+      </Section>
 
     </Layout>
   )

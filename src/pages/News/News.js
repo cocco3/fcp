@@ -1,8 +1,11 @@
 import dayjs from "dayjs"
 import React from "react"
 
-import Feature from "../../components/Feature"
-import Layout from "../../components/layout"
+import {
+  Feature,
+  Layout
+} from "../../components"
+
 import SEO from "../../components/seo"
 
 import data from "./data"
