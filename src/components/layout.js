@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="page">
+      <div className="page beta">
 
         <div className="page_header">
           <div className="page_container">

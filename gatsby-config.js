@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Fog City Pack`,
+    description: `Fog City Pack is a family of pups in San Francisco. We host social and educational events in San Francisco's kink community.`,
+    author: `Joe Cocco`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
