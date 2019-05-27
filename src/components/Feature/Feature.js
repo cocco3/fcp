@@ -27,15 +27,15 @@ function Feature(props) {
 
         <div className="feature_body">
 
-          {subtitle && 
-            <Heading level={4} className="feature_subtitle">
-              {subtitle}
-            </Heading>
-          }
-
           {title &&
             <Heading level={3} className="feature_title">
               {title}
+            </Heading>
+          }
+
+          {subtitle && 
+            <Heading level={4} className="feature_subtitle">
+              {subtitle}
             </Heading>
           }
 

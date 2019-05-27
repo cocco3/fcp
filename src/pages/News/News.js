@@ -1,3 +1,4 @@
+import dayjs from "dayjs"
 import React from "react"
 
 import Feature from "../../components/Feature"
@@ -20,7 +21,7 @@ function News() {
           action="Read More"
           description={value.description}
           img={value.img}
-          subtitle={value.date}
+          subtitle={dayjs(value.date).format("MMMM DD, YYYY")}
           title={value.title}
           url={value.url}
           key={index}

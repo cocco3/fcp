@@ -1,3 +1,4 @@
+import dayjs from "dayjs"
 import React from "react"
 
 import Feature from "../../components/Feature"
@@ -35,12 +36,12 @@ function Events() {
   return (
     <Layout>
       <SEO title="Events" />
-      
+
       <Feature
         action="Get Tickets"
         description={featuredEvent.description}
         img={featuredEvent.img}
-        subtitle={featuredEvent.date}
+        subtitle={dayjs(featuredEvent.date).format("MMMM DD, YYYY")}
         title={featuredEvent.name}
         url={featuredEvent.url}
       />
