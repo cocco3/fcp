@@ -5,38 +5,32 @@ import { Link } from "gatsby"
 import Nav from "../Nav"
 
 import Logo from '../../images/fcp-logo.svg'
+import "./styles.css"
 
-const Header = ({ siteTitle }) => (
-  <header className="header">
+function Header(props) {
+  
+  const {
+    siteTitle
+  } = props
 
-    <a className="header_logo"
-       href="/">
+  return (
+    <header className="header">
+  
+      <Link
+        className="header_logo"
+        to="/"
+      >
         <Logo />
-    </a>
-    
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+        <span className="vh">
           {siteTitle}
-        </Link>
-      </h1>
-    </div>
+        </span>
+      </Link>
+  
+      <Nav></Nav>
+    </header>
+  )
+}
 
-    <Nav></Nav>
-  </header>
-)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
