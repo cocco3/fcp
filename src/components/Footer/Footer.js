@@ -1,10 +1,12 @@
 import React from "react"
 import "./styles.css"
 
-const Footer = () => (
-  <footer className="footer">
-    © {new Date().getFullYear()} | Facebook | Instagram
-  </footer>
-)
+function Footer() {
+  return (
+    <footer className="footer">
+      © {new Date().getFullYear()} | Facebook | Instagram
+    </footer>
+  )
+}
 
 export default Footer

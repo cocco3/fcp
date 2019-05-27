@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Button from "../components/Button"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,6 +11,9 @@ const SecondPage = () => (
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link>
+
+    <Button to="/">Home</Button>
+
   </Layout>
 )
 

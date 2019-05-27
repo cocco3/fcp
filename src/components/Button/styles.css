@@ -1,0 +1,21 @@
+.btn {
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  color: var(--color, #333);
+  cursor: pointer;
+  display: inline-block;
+  line-height: inherit;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition:
+      border-color 0.3s ease 0s,
+      color 0.3s ease 0s,
+      opacity 0.3s ease 0s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #eaeaea;
+  text-decoration: none;
+}

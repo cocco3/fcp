@@ -1,17 +1,19 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
+
+import { Link } from "gatsby"
+import Nav from "../Nav"
 
 import Logo from '../../images/fcp-logo.svg'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <Logo />
+  <header className="header">
+
+    <a className="header_logo"
+       href="/">
+        <Logo />
+    </a>
+    
     <div
       style={{
         margin: `0 auto`,
@@ -31,6 +33,8 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+
+    <Nav></Nav>
   </header>
 )
 
