@@ -15,12 +15,11 @@ function Bios() {
   const allBios = data
     .map((value, index) => {
       return (
-        <Section>
+        <Section key={index}>
           <Feature
             description={value.description}
             img={value.img}
             title={value.name}
-            key={index}
           />
         </Section>
       )

@@ -21,7 +21,7 @@ function News() {
     .map((value, index) => {
 
       return (
-        <Section>
+        <Section key={index}>
           <Feature
             action="Read More"
             description={value.description}
@@ -29,7 +29,6 @@ function News() {
             subtitle={dayjs(value.date).format("MMMM DD, YYYY")}
             title={value.title}
             url={value.url}
-            key={index}
           />
         </Section>
       )
