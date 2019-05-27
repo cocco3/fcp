@@ -14,7 +14,7 @@ function Mailchimp() {
         <form action="https://fogcitypack.us20.list-manage.com/subscribe/post?u=06171f6f72f2a30896831ca94&amp;id=43888fbe48" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 
           <div id="mc_embed_signup_scroll">
-            <Heading level={2}>
+            <Heading level={2} display={3}>
               Join our mailing list for event details!
             </Heading>
 

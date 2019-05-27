@@ -4,17 +4,20 @@ import React from "react"
 import "./styles.css"
 
 function Heading(props) {
-  
+
   const {
     children,
+    display,
     level,
     ...restProps
   } = props
 
   const Element = `h${level}`
 
+  const displayClass = `heading-${display || level}`
+
   return (
-    <Element {...restProps}>
+    <Element {...restProps} className={displayClass}>
       {children}
     </Element>
   )
@@ -23,7 +26,7 @@ function Heading(props) {
 Heading.propTypes = {
   children: PropTypes.node.isRequired,
   level: PropTypes.number.isRequired,
-  as: PropTypes.number
+  display: PropTypes.number
 }
 
 export default Heading

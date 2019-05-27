@@ -54,7 +54,11 @@ function Events() {
       </Section>
 
       <Section>
-        <Heading level={3}>Past Events</Heading>
+
+        <Heading level={3} display={3}>
+          Past Events
+        </Heading>
+
         <div className="grid">
           {allPastEvents}
         </div>

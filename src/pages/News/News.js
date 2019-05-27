@@ -3,7 +3,8 @@ import React from "react"
 
 import {
   Feature,
-  Layout
+  Layout,
+  Section
 } from "../../components"
 
 import SEO from "../../components/seo"
@@ -20,15 +21,17 @@ function News() {
     .map((value, index) => {
 
       return (
-        <Feature
-          action="Read More"
-          description={value.description}
-          img={value.img}
-          subtitle={dayjs(value.date).format("MMMM DD, YYYY")}
-          title={value.title}
-          url={value.url}
-          key={index}
-        />
+        <Section>
+          <Feature
+            action="Read More"
+            description={value.description}
+            img={value.img}
+            subtitle={dayjs(value.date).format("MMMM DD, YYYY")}
+            title={value.title}
+            url={value.url}
+            key={index}
+          />
+        </Section>
       )
     })
 
