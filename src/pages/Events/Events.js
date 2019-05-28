@@ -15,7 +15,7 @@ import "./styles.css"
 
 function Events() {
 
-  const featuredEvent = data.find(x => x.featured)
+  const featuredEvent = data.find(x => x.featured && dayjs().isAfter(x.launchDate))
 
   const allPastEvents = data
     .filter(x => !x.featured)
@@ -33,7 +33,7 @@ function Events() {
           target="_blank"
           rel="noopener noreferrer"
         >
-            <img src={value.img} alt="" />
+            <img src={value.posterImage} alt="" />
         </a>
       )
     })
@@ -42,16 +42,18 @@ function Events() {
     <Layout>
       <SEO title="Events" />
 
-      <Section>
-        <Feature
-          action="Get Tickets"
-          description={featuredEvent.description}
-          img={featuredEvent.img}
-          subtitle={dayjs(featuredEvent.date).format("MMMM DD, YYYY")}
-          title={featuredEvent.name}
-          url={featuredEvent.url}
-        />
-      </Section>
+      {featuredEvent &&
+        <Section>
+          <Feature
+            action="Get Tickets"
+            description={featuredEvent.description}
+            img={featuredEvent.posterImage}
+            subtitle={dayjs(featuredEvent.eventDate).format("MMMM DD, YYYY")}
+            title={featuredEvent.name}
+            url={featuredEvent.url}
+          />
+        </Section>
+      }
 
       <Section>
 
