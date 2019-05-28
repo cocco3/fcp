@@ -4,10 +4,9 @@ import React from "react"
 import {
   Feature,
   Layout,
-  Section
+  Section,
+  SEO
 } from "../components"
-
-import SEO from "../components/seo"
 
 import eventsData from "../pages/Events/data"
 

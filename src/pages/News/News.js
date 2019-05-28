@@ -4,10 +4,9 @@ import React from "react"
 import {
   Feature,
   Layout,
-  Section
+  Section,
+  SEO
 } from "../../components"
-
-import SEO from "../../components/seo"
 
 import data from "./data"
 
@@ -15,7 +14,7 @@ function News() {
 
   const newsItems = data
     .sort((a, b) => {
-      return a > b ? 1 : a < b ? -1 : 0
+      return a.date > b.date ? 1 : a.date < b.date ? -1 : 0
     })
     .reverse()
     .map((value, index) => {

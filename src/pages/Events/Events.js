@@ -5,10 +5,9 @@ import {
   Feature,
   Heading,
   Layout,
-  Section
+  Section,
+  SEO
 } from "../../components"
-
-import SEO from "../../components/seo"
 
 import data from "./data"
 import "./styles.css"
@@ -20,7 +19,7 @@ function Events() {
   const allPastEvents = data
     .filter(x => !x.featured)
     .sort((a, b) => {
-      return a > b ? 1 : a < b ? -1 : 0
+      return a.eventDate > b.eventDate ? 1 : a.eventDate < b.eventDate ? -1 : 0
     })
     .reverse()
     .map((value, index) => {
