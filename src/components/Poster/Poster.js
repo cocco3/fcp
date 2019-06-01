@@ -19,7 +19,7 @@ function Poster(props) {
       rel="noopener noreferrer"
     >
         <img src={img} alt="" />
-        <span class="vh">{name}</span>
+        <span className="vh">{name}</span>
     </a>
   )
 }

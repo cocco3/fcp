@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: "/fcp",
-  assetPrefix: "/fcp",
+  assetPrefix: "https://cocco3.github.io/",
   siteMetadata: {
     title: `Fog City Pack`,
     description: `Fog City Pack is a family of pups in San Francisco. We host social and educational events in San Francisco's kink community.`,

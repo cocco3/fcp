@@ -2,63 +2,63 @@ const data = [
   {
     name: "ALPHA 2016",
     date: "2016-02-27",
-    posterImage: "images/event-2016-alpha-portrait.jpg",
+    posterImage: "/images/event-2016-alpha-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=243288452678246"
   },
   {
     name: "BETA 2016",
     date: "2016-06-18",
-    posterImage: "images/event-2016-beta-portrait.jpg",
+    posterImage: "/images/event-2016-beta-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=305983636408727"
   },
   {
     name: "OMEGA 2016",
     eventDate: "2016-11-19",
-    posterImage: "images/event-2016-omega-portrait.jpg",
+    posterImage: "/images/event-2016-omega-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=388810861459337"
   },
   {
     name: "ALPHA 2017",
     eventDate: "2017-02-25",
-    posterImage: "images/event-2017-alpha-portrait.jpg",
+    posterImage: "/images/event-2017-alpha-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=439337916406631"
   },
   {
     name: "BETA 2017",
     eventDate: "2017-07-28",
-    posterImage: "images/event-2017-beta-portrait.jpg",
+    posterImage: "/images/event-2017-beta-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=516905145316574"
   },
   {
     name: "OMEGA 2017",
     eventDate: "2017-11-18",
-    posterImage: "images/event-2017-omega-portrait.jpg",
+    posterImage: "/images/event-2017-omega-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=567429313597490"
   },
   {
     name: "ALPHA 2018",
     eventDate: "2018-03-03",
-    posterImage: "images/event-2018-alpha-portrait.jpg",
+    posterImage: "/images/event-2018-alpha-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=619269648413456"
   },
   {
     name: "BETA 2018",
     eventDate: "2018-07-27",
-    posterImage: "images/event-2018-beta-portrait.jpg",
+    posterImage: "/images/event-2018-beta-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=730075597332860"
   },
   {
     name: "OMEGA 2018",
     eventDate: "2018-11-17",
-    posterImage: "images/event-2018-omega-portrait.jpg",
+    posterImage: "/images/event-2018-omega-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=804802493193503"
   },
   {
     recent: true,
     name: "ALPHA 2019",
     eventDate: "2019-03-02",
-    posterImage: "images/event-2019-alpha-portrait.jpg",
-    groupImage: "images/group-2019-alpha.webp",
+    posterImage: "/images/event-2019-alpha-portrait.jpg",
+    groupImage: "/images/group-2019-alpha.webp",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=873080926365659"
   },
   {
@@ -66,7 +66,7 @@ const data = [
     name: "BETA 2019",
     launchDate: "2019-05-13",
     eventDate: "2019-07-26",
-    posterImage: "images/event-2019-beta-portrait.jpg",
+    posterImage: "/images/event-2019-beta-portrait.jpg",
     ticketsUrl: "https://www.eventbrite.com/e/fog-city-pack-presents-beta-2019-dore-alley-friday-tickets-61555282507",
     description: `
   <p>
