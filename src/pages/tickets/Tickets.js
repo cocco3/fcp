@@ -6,7 +6,7 @@ import {
   SEO
 } from "../../components"
 
-import eventsData from "../Events/data"
+import eventsData from "../events/data"
 
 class Tickets extends Component {
   constructor(props) {
@@ -30,7 +30,17 @@ class Tickets extends Component {
       <Layout>
         <SEO title="Tickets" />
         {this.state.featuredEvent &&
-          <div>Redirecting to Eventbrite...</div>
+          <>
+            <p>
+              Redirecting to Eventbrite...
+            </p>
+            <p>
+              If the page does not reload, click this link:<br/>
+              <a href={this.state.featuredEvent.ticketsUrl}>
+                {this.state.featuredEvent.ticketsUrl}
+              </a>
+            </p>
+          </>
         }
 
         {!this.state.featuredEvent &&
