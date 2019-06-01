@@ -67,6 +67,7 @@ const data = [
     launchDate: "2019-05-27",
     eventDate: "2019-07-26",
     posterImage: "images/event-2019-beta-portrait.jpg",
+    ticketsUrl: "https://www.eventbrite.com/e/fog-city-pack-presents-beta-2019-dore-alley-friday-tickets-61555282507",
     url: "http://fogcitypack.com/tickets",
     description: `
   <p>

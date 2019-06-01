@@ -49,7 +49,7 @@ function Events() {
             img={featuredEvent.posterImage}
             subtitle={dayjs(featuredEvent.eventDate).format("MMMM DD, YYYY")}
             title={featuredEvent.name}
-            url={featuredEvent.url}
+            url={featuredEvent.ticketsUrl}
           />
         </Section>
       }

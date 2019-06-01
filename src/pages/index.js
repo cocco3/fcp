@@ -8,7 +8,7 @@ import {
   SEO
 } from "../components"
 
-import eventsData from "../pages/Events/data"
+import eventsData from "./Events/data"
 
 function IndexPage() {
   const featuredEvent = eventsData.find(x => x.featured && dayjs().isAfter(x.launchDate))
@@ -36,7 +36,7 @@ function IndexPage() {
             img={featuredEvent.posterImage}
             subtitle={dayjs(featuredEvent.eventDate).format("MMMM DD, YYYY")}
             title={featuredEvent.name}
-            url={featuredEvent.url}
+            url={featuredEvent.ticketsUrl}
           />
         </Section>
       }
