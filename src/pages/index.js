@@ -8,7 +8,7 @@ import {
   SEO
 } from "../components"
 
-import eventsData from "./events/data"
+import eventsData from "../data/events"
 
 function IndexPage() {
   const featuredEvent = eventsData.find(x => x.featured && dayjs().isAfter(x.launchDate))

@@ -6,7 +6,7 @@ import {
   SEO
 } from "../components"
 
-import eventsData from "./events/data"
+import eventsData from "../data/events"
 
 class TicketsPage extends Component {
   constructor(props) {

@@ -5,12 +5,12 @@ import {
   Feature,
   Heading,
   Layout,
+  PosterGrid,
   Section,
   SEO
-} from "../../components"
+} from "../components"
 
-import data from "./data"
-import "./styles.css"
+import data from "../data/events"
 
 function EventsPage() {
 
@@ -25,15 +25,13 @@ function EventsPage() {
     .map((value, index) => {
 
       return (
-        <a
+        <PosterGrid
+          img={value.posterImage}
+          name={value.name}
+          url={value.photosUrl}
           key={index}
-          className="grid_item"
-          href={value.photosUrl}
-          target="_blank"
-          rel="noopener noreferrer"
         >
-            <img src={value.posterImage} alt="" />
-        </a>
+        </PosterGrid>
       )
     })
 

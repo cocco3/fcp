@@ -6,13 +6,13 @@ import {
   Layout,
   Section,
   SEO
-} from "../../components"
+} from "../components"
 
-import data from "./data"
+import newsData from "../data/news"
 
 function NewsPage() {
 
-  const newsItems = data
+  const newsItems = newsData
     .sort((a, b) => {
       return a.date > b.date ? 1 : a.date < b.date ? -1 : 0
     })
