@@ -28,6 +28,7 @@
     "system-font-css": "^2.0.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.0"
   },
   "keywords": [
@@ -36,8 +37,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gh-pages -d public -b gh-pages",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "predeploy": "npm run build",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""

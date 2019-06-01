@@ -82,6 +82,8 @@ const data = [
     - Fawks, Jumpr (Joe Weidman), Astro (Fog City Pack Residents)
   </p>
   <p>
+    Lighting Design by Justin Bernard<br />
+    Photography by Bradley Roberge Photography<br />
     Sponsored by Mr-S-Leather
   </p>`
   }
