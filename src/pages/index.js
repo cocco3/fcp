@@ -15,7 +15,7 @@ function IndexPage() {
 
   const recentEvent = eventsData.find(x => x.recent)
 
-  const recentEventDescription = `<p>ARRROOOU!!! THANK YOU to everyone who made it out for ${recentEvent.name}! What an EPIC evening! Special WOOFS to the DJs, staff and crew, and our photographer. Check out the photos at the link below, and keep the party vibes going by checking out our <a href="http://soundcloud.com/fogcitypack" target="_blank">SoundCloud page</a>.</p>`
+  const recentEventDescription = `<p>ARRROOOU!!! THANK YOU to everyone who made it out for ${recentEvent.name}! What an EPIC evening! Special WOOFS to the DJs, staff and crew, and our photographer. Check out the photos at the link below, and keep the party vibes going by checking out our <a href="http://soundcloud.com/fogcitypack" target="_blank" rel="noopener noreferrer">SoundCloud page</a>.</p>`
 
   const aboutThePack = `<p>
   Fog City Pack emerged out of a network of several family-like relationships in San Francisco, California. Beginning in 2014, Alphas Turbo and Midnight first recognized each other as cousin pups, due to the close relationship between Midnight and Turbo’s original Handler. After collaring their own pups, given the degree of interconnectedness among the group and the simultaneous growth of the pup subculture in San Francisco, Turbo and Midnight formed a tightly bonded family unit.

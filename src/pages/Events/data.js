@@ -58,7 +58,7 @@ const data = [
     name: "ALPHA 2019",
     eventDate: "2019-03-02",
     posterImage: "images/event-2019-alpha-portrait.jpg",
-    groupImage: "images/group-2019-alpha.jpg",
+    groupImage: "images/group-2019-alpha.webp",
     url: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=873080926365659"
   },
   {
