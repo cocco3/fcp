@@ -44,7 +44,8 @@ class Newsletter extends Component {
   }
   render() {
     return (
-      <>
+      <div className="form">
+
         <Heading level={2} display={3}>
           Join our mailing list for event details!
         </Heading>
@@ -91,7 +92,7 @@ class Newsletter extends Component {
           }
           dangerouslySetInnerHTML={{ __html: this.state.errorMsg }}
         />
-      </>
+      </div>
     )
   }
 }

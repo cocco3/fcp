@@ -1,3 +1,17 @@
+.form {
+  margin: 0 0 56px 0;
+}
+
+.form::before {
+  background: #eaeaea;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0 auto 72px auto;
+  text-align: center;
+  width: 50%;
+}
+
 .input-label {
   display: block;
   margin-bottom: 4px;
