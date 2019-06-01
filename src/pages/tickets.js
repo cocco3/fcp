@@ -4,11 +4,11 @@ import React, { Component } from "react"
 import {
   Layout,
   SEO
-} from "../../components"
+} from "../components"
 
-import eventsData from "../events/data"
+import eventsData from "./events/data"
 
-class Tickets extends Component {
+class TicketsPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -55,4 +55,4 @@ class Tickets extends Component {
   }
 }
 
-export default Tickets
+export default TicketsPage

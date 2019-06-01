@@ -10,7 +10,7 @@ import {
 
 import data from "./data"
 
-function News() {
+function NewsPage() {
 
   const newsItems = data
     .sort((a, b) => {
@@ -41,4 +41,4 @@ function News() {
   )
 }
 
-export default News
+export default NewsPage

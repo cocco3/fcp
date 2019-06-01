@@ -12,7 +12,7 @@ import {
 import data from "./data"
 import "./styles.css"
 
-function Events() {
+function EventsPage() {
 
   const featuredEvent = data.find(x => x.featured && dayjs().isAfter(x.launchDate))
 
@@ -68,4 +68,4 @@ function Events() {
   )
 }
 
-export default Events
+export default EventsPage

@@ -5,13 +5,13 @@ import {
   Layout,
   Section,
   SEO
-} from "../../components"
+} from "../components"
 
-import data from "./data"
+import biosData from "../data/bios"
 
-function Bios() {
+function BiosPage() {
 
-  const allBios = data
+  const allBios = biosData
     .map((value, index) => {
       return (
         <Section key={index}>
@@ -32,4 +32,4 @@ function Bios() {
   )
 }
 
-export default Bios
+export default BiosPage
