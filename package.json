@@ -38,12 +38,13 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build:prefix-paths": "gatsby build --prefix-paths",
     "clean": "rimraf public",
-    "deploy": "gh-pages -d public -b gh-pages",
+    "deploy:gh-pages": "gh-pages -d public -b gh-pages",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "prebuild": "npm run clean",
-    "predeploy": "npm run build",
+    "predeploy:gh-pages": "build:prefix-paths",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
