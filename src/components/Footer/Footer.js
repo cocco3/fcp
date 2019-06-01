@@ -1,6 +1,6 @@
 import React from "react"
 
-import Mailchimp from "../Mailchimp"
+import Newsletter from "../Newsletter"
 
 import "./styles.css"
 
@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="footer">
 
-      <Mailchimp />
+      <Newsletter />
 
       <ul className="footer_links">
         <li>

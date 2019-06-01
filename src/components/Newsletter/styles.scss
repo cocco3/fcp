@@ -1,0 +1,33 @@
+.input-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-label-required {
+  color: #e85c41;
+  font-size: 150%;
+  position: relative;
+  top: 5px;
+}
+
+.input-text {
+  border: 0;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 8px;
+  width: auto;
+}
+
+.input-group {
+  display: flex;
+  max-width: 500px;
+
+  .input-text {
+    flex: 1 0 auto;
+  }
+
+  .input-group-append {
+    flex: 0 1 auto;
+    margin: 0 0 0 12px;
+  }
+}
