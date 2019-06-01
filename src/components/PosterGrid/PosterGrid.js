@@ -6,28 +6,18 @@ import "./styles.css"
 function PosterGrid(props) {
 
   const {
-    img,
-    name,
-    url
+    children
   } = props
 
   return (
-    <a
-      className="grid_item"
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-        <img src={img} alt="" />
-        <span class="vh">{name}</span>
-    </a>
+    <div className="grid">
+      {children}
+    </div>
   )
 }
 
 PosterGrid.propTypes = {
-  img: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 }
 
 export default PosterGrid

@@ -5,6 +5,7 @@ import {
   Feature,
   Heading,
   Layout,
+  Poster,
   PosterGrid,
   Section,
   SEO
@@ -25,13 +26,13 @@ function EventsPage() {
     .map((value, index) => {
 
       return (
-        <PosterGrid
+        <Poster
           img={value.posterImage}
           name={value.name}
           url={value.photosUrl}
           key={index}
         >
-        </PosterGrid>
+        </Poster>
       )
     })
 
@@ -58,9 +59,10 @@ function EventsPage() {
           Past Events
         </Heading>
 
-        <div className="grid">
+        <PosterGrid>
           {allPastEvents}
-        </div>
+        </PosterGrid>
+
       </Section>
     </Layout>
   )
