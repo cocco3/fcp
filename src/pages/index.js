@@ -48,7 +48,7 @@ function IndexPage() {
             description={recentEventDescription}
             img={recentEvent.groupImage}
             title="Thanks for coming out!"
-            url={recentEvent.url}
+            url={recentEvent.photosUrl}
           />
         </Section>
       }

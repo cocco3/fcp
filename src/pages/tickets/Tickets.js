@@ -17,7 +17,9 @@ class Tickets extends Component {
   }
 
   componentDidMount() {
-    const featuredEvent = eventsData.find(x => x.featured && dayjs().isAfter(x.launchDate))
+    const featuredEvent = eventsData.find(x => {
+      return x.featured && dayjs().isAfter(x.launchDate) && dayjs().isBefore(x.eventDate)
+    })
     this.setState({featuredEvent: featuredEvent})
 
     if (featuredEvent) {

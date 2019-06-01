@@ -28,7 +28,7 @@ function Events() {
         <a
           key={index}
           className="grid_item"
-          href={value.url}
+          href={value.photosUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
