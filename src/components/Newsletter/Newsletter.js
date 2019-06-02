@@ -22,20 +22,18 @@ class Newsletter extends Component {
   onSubmit = async event => {
     event.preventDefault()
     const email = event.target.yourmail.value || null
-    console.log(email)
+
     if (!email) {
       return
     }
 
     try {
       const result = await addToMailchimp(email, {})
-      console.log(result.msg)
       this.setState({ showSuccess: true })
       this.setState({ successMsg: result.msg })
       this.setState({ showError: false })
       this.setState({ errorMsg: "" })
     } catch (err) {
-      console.log(err)
       this.setState({ showSuccess: false })
       this.setState({ successMsg: "" })
       this.setState({ showError: true })
