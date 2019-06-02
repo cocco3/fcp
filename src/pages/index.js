@@ -16,12 +16,12 @@ import eventsData from "../data/events"
 
 function IndexPage(props) {
   const featuredEvent = eventsData.find(x => x.featured && dayjs().isAfter(x.launchDate))
-  const featuredEventImage = getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
+  const featuredEventImage = featuredEvent && getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
 
   const recentEvent = eventsData.find(x => x.recent)
-  const recentEventImage = getImageFromResults(props.data.groupImages, recentEvent.groupImage)
+  const recentEventImage = recentEvent && getImageFromResults(props.data.groupImages, recentEvent.groupImage)
 
-  const recentEventDescription = `<p>ARRROOOU!!! THANK YOU to everyone who made it out for ${recentEvent.name}! What an EPIC evening! Special WOOFS to the DJs, staff and crew, and our photographer. Check out the photos at the link below, and keep the party vibes going by checking out our <a href="http://soundcloud.com/fogcitypack" target="_blank" rel="noopener noreferrer">SoundCloud page</a>.</p>`
+  const recentEventDescription = recentEvent && `<p>ARRROOOU!!! THANK YOU to everyone who made it out for ${recentEvent.name}! What an EPIC evening! Special WOOFS to the DJs, staff and crew, and our photographer. Check out the photos at the link below, and keep the party vibes going by checking out our <a href="http://soundcloud.com/fogcitypack" target="_blank" rel="noopener noreferrer">SoundCloud page</a>.</p>`
 
   const aboutImage = getImageFromResults(props.data.groupImages, 'group-about.jpg')
   const aboutThePack = `<p>

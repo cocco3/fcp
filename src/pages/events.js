@@ -20,7 +20,7 @@ import data from "../data/events"
 function EventsPage(props) {
 
   const featuredEvent = data.find(x => x.featured && dayjs().isAfter(x.launchDate))
-  const featuredEventImage = getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
+  const featuredEventImage = featuredEvent && getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
 
   const allPastEvents = data
     .filter(x => !x.featured)
