@@ -1,5 +1,7 @@
 import dayjs from "dayjs"
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import {
   Feature,
@@ -10,7 +12,7 @@ import {
 
 import newsData from "../data/news"
 
-function NewsPage() {
+function NewsPage(props) {
 
   const newsItems = newsData
     .sort((a, b) => {
@@ -19,12 +21,23 @@ function NewsPage() {
     .reverse()
     .map((value, index) => {
 
+      const currentImageName = value.img
+
+      const fluidImage = props.data.newsImages.edges.find(x => {
+        return x.node.childImageSharp
+          && x.node.childImageSharp.fluid.originalName === currentImageName
+      })
+
+      const Image = (fluidImage &&
+        <Img fluid={fluidImage.node.childImageSharp.fluid} />
+      )
+
       return (
         <Section key={index}>
           <Feature
             action="Read More"
             description={value.description}
-            img={value.img}
+            image={Image}
             subtitle={dayjs(value.date).format("MMMM DD, YYYY")}
             title={value.title}
             url={value.url}
@@ -42,3 +55,20 @@ function NewsPage() {
 }
 
 export default NewsPage
+
+export const pageQuery = graphql`
+  query {
+    newsImages: allFile(filter: {absolutePath: {regex: "/news/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid,
+              originalName
+            }
+          }
+        }
+      }
+    }
+  }
+`

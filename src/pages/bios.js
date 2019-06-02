@@ -16,11 +16,16 @@ function BiosPage(props) {
   const allBios = biosData
     .map((value, index) => {
 
-      const i = props.data.bioImages.edges.find(x => {
-        return x.node.childImageSharp.fluid.originalName === value.img
+      const currentImageName = value.img
+
+      const fluidImage = props.data.bioImages.edges.find(x => {
+        return x.node.childImageSharp
+          && x.node.childImageSharp.fluid.originalName === currentImageName
       })
 
-      const Image = <Img fluid={i.node.childImageSharp.fluid} />
+      const Image = (fluidImage &&
+        <Img fluid={fluidImage.node.childImageSharp.fluid} />
+      )
 
       return (
         <Section key={index}>
