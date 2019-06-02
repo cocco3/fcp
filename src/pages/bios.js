@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import {
   Feature,
@@ -9,15 +11,22 @@ import {
 
 import biosData from "../data/bios"
 
-function BiosPage() {
+function BiosPage(props) {
 
   const allBios = biosData
     .map((value, index) => {
+
+      const i = props.data.bioImages.edges.find(x => {
+        return x.node.childImageSharp.fluid.originalName === value.img
+      })
+
+      const Image = <Img fluid={i.node.childImageSharp.fluid} />
+
       return (
         <Section key={index}>
           <Feature
             description={value.description}
-            img={value.img}
+            image={Image}
             title={value.name}
           />
         </Section>
@@ -33,3 +42,20 @@ function BiosPage() {
 }
 
 export default BiosPage
+
+export const pageQuery = graphql`
+  query {
+    bioImages: allFile(filter: {absolutePath: {regex: "/bios/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid,
+              originalName
+            }
+          }
+        }
+      }
+    }
+  }
+`

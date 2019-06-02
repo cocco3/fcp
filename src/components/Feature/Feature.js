@@ -10,18 +10,23 @@ function Feature(props) {
     action,
     description,
     img,
+    image,
     subtitle,
     title,
     url
   } = props
 
+  const Image = image || (img &&
+    <img src={img} alt={title} />
+  )
+
   return (
     <div className="feature">
       <div className="feature_wrap">
 
-        {img &&
+        {Image &&
           <div className="feature_img">
-            <img src={img} alt={title} />
+            {Image}
           </div>
         }
 
@@ -67,6 +72,7 @@ Feature.defaultProps = {
   action: '',
   description: '',
   img: '',
+  image: null,
   subtitle: '',
   title: '',
   url: ''
@@ -76,6 +82,7 @@ Feature.propTypes = {
   action: PropTypes.string,
   description: PropTypes.string,
   img: PropTypes.string,
+  image: PropTypes.element,
   subtitle: PropTypes.string,
   title: PropTypes.string,
   url: PropTypes.string
