@@ -20,6 +20,7 @@ import data from "../data/events"
 function EventsPage(props) {
 
   const featuredEvent = data.find(x => x.featured && dayjs().isAfter(x.launchDate))
+  const featuredEventImage = getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
 
   const allPastEvents = data
     .filter(x => !x.featured)
@@ -55,7 +56,7 @@ function EventsPage(props) {
           <Feature
             action="Get Tickets"
             description={featuredEvent.description}
-            img={featuredEvent.posterImage}
+            image={<Img fluid={featuredEventImage.node.childImageSharp.fluid} />}
             subtitle={dayjs(featuredEvent.eventDate).format("MMMM DD, YYYY")}
             title={featuredEvent.name}
             url={featuredEvent.ticketsUrl}
