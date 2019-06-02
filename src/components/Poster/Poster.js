@@ -6,7 +6,7 @@ import "./styles.css"
 function Poster(props) {
 
   const {
-    img,
+    image,
     name,
     url
   } = props
@@ -18,14 +18,14 @@ function Poster(props) {
       target="_blank"
       rel="noopener noreferrer"
     >
-        <img src={img} alt="" />
-        <span className="vh">{name}</span>
+      {image}
+      <span className="vh">{name}</span>
     </a>
   )
 }
 
 Poster.propTypes = {
-  img: PropTypes.string.isRequired,
+  image: PropTypes.element.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 }

@@ -1,5 +1,7 @@
 import dayjs from "dayjs"
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import {
   Feature,
@@ -13,7 +15,7 @@ import {
 
 import data from "../data/events"
 
-function EventsPage() {
+function EventsPage(props) {
 
   const featuredEvent = data.find(x => x.featured && dayjs().isAfter(x.launchDate))
 
@@ -25,9 +27,20 @@ function EventsPage() {
     .reverse()
     .map((value, index) => {
 
+      const currentImageName = value.posterImage
+
+      const fluidImage = props.data.eventImages.edges.find(x => {
+        return x.node.childImageSharp
+          && x.node.childImageSharp.fluid.originalName === currentImageName
+      })
+
+      const Image = (fluidImage &&
+        <Img fluid={fluidImage.node.childImageSharp.fluid} />
+      )
+
       return (
         <Poster
-          img={value.posterImage}
+          image={Image}
           name={value.name}
           url={value.photosUrl}
           key={index}
@@ -69,3 +82,20 @@ function EventsPage() {
 }
 
 export default EventsPage
+
+export const pageQuery = graphql`
+  query {
+    eventImages: allFile(filter: {absolutePath: {regex: "/events/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid,
+              originalName
+            }
+          }
+        }
+      }
+    }
+  }
+`
