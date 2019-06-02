@@ -13,6 +13,8 @@ import {
   SEO
 } from "../components"
 
+import { getImageFromResults } from "../utilities"
+
 import data from "../data/events"
 
 function EventsPage(props) {
@@ -27,12 +29,7 @@ function EventsPage(props) {
     .reverse()
     .map((value, index) => {
 
-      const currentImageName = value.posterImage
-
-      const fluidImage = props.data.eventImages.edges.find(x => {
-        return x.node.childImageSharp
-          && x.node.childImageSharp.fluid.originalName === currentImageName
-      })
+      const fluidImage = getImageFromResults(props.data.eventImages, value.posterImage)
 
       const Image = (fluidImage &&
         <Img fluid={fluidImage.node.childImageSharp.fluid} />

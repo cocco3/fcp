@@ -10,6 +10,8 @@ import {
   SEO
 } from "../components"
 
+import { getImageFromResults } from "../utilities"
+
 import newsData from "../data/news"
 
 function NewsPage(props) {
@@ -21,12 +23,7 @@ function NewsPage(props) {
     .reverse()
     .map((value, index) => {
 
-      const currentImageName = value.img
-
-      const fluidImage = props.data.newsImages.edges.find(x => {
-        return x.node.childImageSharp
-          && x.node.childImageSharp.fluid.originalName === currentImageName
-      })
+      const fluidImage = getImageFromResults(props.data.newsImages, value.img)
 
       const Image = (fluidImage &&
         <Img fluid={fluidImage.node.childImageSharp.fluid} />

@@ -9,6 +9,8 @@ import {
   SEO
 } from "../components"
 
+import { getImageFromResults } from "../utilities"
+
 import biosData from "../data/bios"
 
 function BiosPage(props) {
@@ -16,12 +18,7 @@ function BiosPage(props) {
   const allBios = biosData
     .map((value, index) => {
 
-      const currentImageName = value.img
-
-      const fluidImage = props.data.bioImages.edges.find(x => {
-        return x.node.childImageSharp
-          && x.node.childImageSharp.fluid.originalName === currentImageName
-      })
+      const fluidImage = getImageFromResults(props.data.bioImages, value.img)
 
       const Image = (fluidImage &&
         <Img fluid={fluidImage.node.childImageSharp.fluid} />
