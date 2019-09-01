@@ -61,7 +61,7 @@ const data = [
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=873080926365659"
   },
   {
-    featured: true,
+    // featured: true,
     recent: true,
     name: "BETA 2019",
     launchDate: "2019-05-13",
