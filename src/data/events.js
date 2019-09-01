@@ -54,7 +54,6 @@ const data = [
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=804802493193503"
   },
   {
-    recent: true,
     name: "ALPHA 2019",
     eventDate: "2019-03-02",
     posterImage: "event-2019-alpha-portrait.jpg",
@@ -63,11 +62,13 @@ const data = [
   },
   {
     featured: true,
+    recent: true,
     name: "BETA 2019",
     launchDate: "2019-05-13",
     eventDate: "2019-07-26",
     posterImage: "event-2019-beta-portrait.jpg",
-    ticketsUrl: "https://www.eventbrite.com/e/fog-city-pack-presents-beta-2019-dore-alley-friday-tickets-61555282507",
+    groupImage: "group-2019-beta.jpg",
+    photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=970327499974334",
     description: `
   <p>
     Fog City Pack Presents: BETA 2019 feat. Jasmine Infiniti and Vicki Powell b2b Brian Rojas!</p><p>Like a prayer, Fog City Pack is BACK this Dore Weekend to baptize the masses in sound and sin at BETA 2019! Join us Friday, July 26 at Club Six for an evening of truly GODLIKE proportions featuring the divine talents of New World Dysorder's JASMINE INFINITI and Deep South's VICKI POWELL & BRIAN ROJAS!!
