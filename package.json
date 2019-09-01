@@ -4,9 +4,20 @@
   "description": "Website for Fog City Pack",
   "version": "0.1.0",
   "author": "Joe Cocco <cocco3@gmail.com>",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cocco3/fcp"
+  },
+  "bugs": {
+    "url": "https://github.com/cocco3/fcp/issues"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
-    "dayjs": "^1.8.15",
+    "dayjs": "^1.8.16",
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-mailchimp": "^5.1.0",
@@ -22,39 +33,26 @@
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "system-font-css": "^2.0.2"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.0",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "build:prefix-paths": "gatsby build --prefix-paths",
     "clean": "rimraf public .cache",
-    "deploy:gh-pages": "gh-pages -d public -b gh-pages",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "prebuild": "npm run clean",
-    "prebuild:prefix-paths": "npm run clean",
-    "predeploy:gh-pages": "npm run build:prefix-paths",
+    "prepush:gh-pages": "npm run build",
+    "push:gh-pages": "gh-pages -d public -b gh-pages",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cocco3/fcp"
-  },
-  "bugs": {
-    "url": "https://github.com/cocco3/fcp/issues"
   }
 }
