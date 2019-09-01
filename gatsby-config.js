@@ -28,31 +28,32 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /images/
-        }
-      }
+          include: /images/,
+        },
+      },
     },
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
         fonts: [
           {
-            family: "Montserrat",
-            subsets: ["latin"],
-          }
-        ]
-      }
+            family: 'Montserrat',
+            subsets: ['latin'],
+          },
+        ],
+      },
     },
     {
-      resolve: "gatsby-plugin-mailchimp",
+      resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: "https://fogcitypack.us20.list-manage.com/subscribe/post?u=06171f6f72f2a30896831ca94&amp;id=43888fbe48"
+        endpoint:
+          'https://fogcitypack.us20.list-manage.com/subscribe/post?u=06171f6f72f2a30896831ca94&amp;id=43888fbe48',
       },
-  },
+    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

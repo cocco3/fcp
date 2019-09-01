@@ -47,7 +47,7 @@
     "build": "gatsby build",
     "clean": "rimraf public .cache",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,json,md}\"",
     "prebuild": "npm run clean",
     "prepush:gh-pages": "npm run build",
     "push:gh-pages": "gh-pages -d public -b gh-pages",
