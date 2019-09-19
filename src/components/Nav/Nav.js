@@ -23,13 +23,13 @@ function Nav(props) {
     <nav className="nav">
       <ul className="nav_list">
         <li className="nav_listItem">
-          <NavItem to="/bios">Bios</NavItem>
+          <NavItem to="/bios/">Bios</NavItem>
         </li>
         <li className="nav_listItem">
-          <NavItem to="/events">Events</NavItem>
+          <NavItem to="/events/">Events</NavItem>
         </li>
         <li className="nav_listItem">
-          <NavItem to="/news">News</NavItem>
+          <NavItem to="/news/">News</NavItem>
         </li>
       </ul>
     </nav>
