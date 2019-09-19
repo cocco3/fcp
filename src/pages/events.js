@@ -1,4 +1,5 @@
 import dayjs from "dayjs"
+import groupBy from 'lodash-es/groupBy'
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -22,28 +23,48 @@ function EventsPage(props) {
   const featuredEvent = data.find(x => x.featured && dayjs().isAfter(x.launchDate))
   const featuredEventImage = featuredEvent && getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
 
-  const allPastEvents = data
+  const filteredPastEvents = data
     .filter(x => !x.featured)
+
+  const groupedPastEvents = groupBy(filteredPastEvents, x => dayjs(x.eventDate).year())
+
+  const allPastEvents = Object.keys(groupedPastEvents)
     .sort((a, b) => {
       return a.eventDate > b.eventDate ? 1 : a.eventDate < b.eventDate ? -1 : 0
     })
     .reverse()
-    .map((value, index) => {
+    .map((groupYear, i) => {
+      const group = groupedPastEvents[groupYear]
 
-      const fluidImage = getImageFromResults(props.data.eventImages, value.posterImage)
+      const events = group.map((event, j) => {
+        const fluidImage = getImageFromResults(props.data.eventImages, event.posterImage)
 
-      const Image = (fluidImage &&
-        <Img fluid={fluidImage.node.childImageSharp.fluid} />
-      )
+        const Image = (fluidImage &&
+          <Img fluid={fluidImage.node.childImageSharp.fluid} />
+        )
+
+        return (
+          <Poster
+            image={Image}
+            name={event.name}
+            url={event.photosUrl}
+            key={j}
+          >
+          </Poster>
+        )
+      })
 
       return (
-        <Poster
-          image={Image}
-          name={value.name}
-          url={value.photosUrl}
-          key={index}
-        >
-        </Poster>
+        <React.Fragment key={i}>
+
+          <Heading level={4} display={4}>
+            {groupYear}
+          </Heading>
+
+          <PosterGrid>
+            {events}
+          </PosterGrid>
+        </React.Fragment>
       )
     })
 
@@ -70,9 +91,7 @@ function EventsPage(props) {
           Past Events
         </Heading>
 
-        <PosterGrid>
-          {allPastEvents}
-        </PosterGrid>
+        {allPastEvents}
 
       </Section>
     </Layout>

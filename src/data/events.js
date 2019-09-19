@@ -1,13 +1,13 @@
 const data = [
   {
     name: "ALPHA 2016",
-    date: "2016-02-27",
+    eventDate: "2016-02-27",
     posterImage: "event-2016-alpha-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=243288452678246"
   },
   {
     name: "BETA 2016",
-    date: "2016-06-18",
+    eventDate: "2016-06-18",
     posterImage: "event-2016-beta-portrait.jpg",
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=305983636408727"
   },
