@@ -26,7 +26,7 @@
        }
      `}
      render={data => (
-       <div className="page beta">
+       <div className="page omega">
 
          <div className="page_header">
            <div className="page_container">

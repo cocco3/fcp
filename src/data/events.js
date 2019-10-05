@@ -61,7 +61,6 @@ const data = [
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=873080926365659"
   },
   {
-    // featured: true,
     recent: true,
     name: "BETA 2019",
     launchDate: "2019-05-13",
@@ -86,6 +85,28 @@ const data = [
     Lighting Design by Justin Bernard<br />
     Photography by Bradley Roberge Photography<br />
     Sponsored by Mr-S-Leather
+  </p>`
+  },
+  {
+    featured: true,
+    name: "OMEGA 2019",
+    launchDate: "2019-10-04",
+    eventDate: "2019-11-23",
+    posterImage: "event-2019-omega-portrait.png",
+    ticketsUrl: 'https://www.eventbrite.com/e/fog-city-pack-presents-omega-2019-tickets-74746381439',
+    description: `
+  <p>
+    Fog City Pack gears up to drop one mind-bending finale to 2019 at OMEGA! Join us Saturday, November 23rd at Club Six Underground for the SF DEBUT of Vault Wax & Afro Acid's own BEYUN—your guide for an evening of altered states, blissful beats, and acid-dipped basslines. With smoking hot decks, steamy guys, and sweat dripping off the walls, get ready for one epic trip that will send you home wearing nothing but a smile.
+  </p>
+  <p>
+    SOUND PSYCHONAUTS<br />
+    - Beyun (Vault Wax, Afro Acid)<br />
+    - Fawks, Jumpr, Astro (Fog City Pack Residents)<br />
+  </p>
+  <p>
+    Sponsored by Mr-S-Leather<br />
+    Photo Booth by Bradley Roberge Photography<br />
+    Lighting by Stratus Lighting
   </p>`
   }
 ]
