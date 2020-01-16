@@ -61,7 +61,6 @@ const data = [
     photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=873080926365659"
   },
   {
-    recent: true,
     name: "BETA 2019",
     launchDate: "2019-05-13",
     eventDate: "2019-07-26",
@@ -88,12 +87,13 @@ const data = [
   </p>`
   },
   {
-    featured: true,
+    recent: true,
     name: "OMEGA 2019",
     launchDate: "2019-10-04",
     eventDate: "2019-11-23",
     posterImage: "event-2019-omega-portrait.png",
-    ticketsUrl: 'https://www.eventbrite.com/e/fog-city-pack-presents-omega-2019-tickets-74746381439',
+    groupImage: "group-2019-omega.jpg",
+    photosUrl: "https://www.facebook.com/pg/fogcitypack/photos/?tab=album&album_id=1064383010568782",
     description: `
   <p>
     Fog City Pack gears up to drop one mind-bending finale to 2019 at OMEGA! Join us Saturday, November 23rd at Club Six Underground for the SF DEBUT of Vault Wax & Afro Acid's own BEYUN—your guide for an evening of altered states, blissful beats, and acid-dipped basslines. With smoking hot decks, steamy guys, and sweat dripping off the walls, get ready for one epic trip that will send you home wearing nothing but a smile.
@@ -107,6 +107,28 @@ const data = [
     Sponsored by Mr-S-Leather<br />
     Photo Booth by Bradley Roberge Photography<br />
     Lighting by Stratus Lighting
+  </p>`
+  },
+  {
+    featured: true,
+    name: "ALPHA 2020",
+    launchDate: "2020-01-14",
+    eventDate: "2020-02-29",
+    posterImage: "event-2020-alpha-portrait.png",
+    ticketsUrl: 'https://www.eventbrite.com/e/fog-city-pack-presents-alpha-2020-5-year-anniversary-tickets-89354416465',
+    description: `
+  <p>
+    Fog City Pack celebrates FIVE YEARS of dance and deviance with a BLOWOUT bash at ALPHA 2020 on Saturday, February 29th from 10PM – 4AM. Featuring beats that will knock your jocks off by Wrecked talent, Ryan Smith—and the glory of a whole evening drenched in sound and sweat—this year's ALPHA is going to be a five-alarm fire you won't want to put out.
+  </p>
+  <p>
+    EARGASMS BY<br />
+    - Ryan Smith DJ (Wrecked)<br />
+    - Fawks, Jumpr, Astro (Fog City Pack Residents)<br />
+  </p>
+  <p>
+    Sponsored by: Mr-S-Leather<br />
+    Photo Booth by: Bradley Roberge Photography<br />
+    Lighting by: Stratus Lighting
   </p>`
   }
 ]
