@@ -134,7 +134,7 @@ const data = [
   {
     featured: true,
     name: "BETA 2021",
-    launchDate: "2021-06-06",
+    launchDate: "2021-06-07",
     eventDate: "2021-07-23",
     posterImage: "event-2021-beta-portrait.png",
     ticketsUrl: 'https://www.eventbrite.com/e/fog-city-pack-presents-beta-2021-dore-alley-friday-tickets-158291783987',
