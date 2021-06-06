@@ -87,7 +87,6 @@ const data = [
   </p>`
   },
   {
-    recent: true,
     name: "OMEGA 2019",
     launchDate: "2019-10-04",
     eventDate: "2019-11-23",
@@ -110,12 +109,13 @@ const data = [
   </p>`
   },
   {
-    featured: true,
+    recent: true,
     name: "ALPHA 2020",
     launchDate: "2020-01-14",
     eventDate: "2020-02-29",
     posterImage: "event-2020-alpha-portrait.png",
-    ticketsUrl: 'https://www.eventbrite.com/e/fog-city-pack-presents-alpha-2020-5-year-anniversary-tickets-89354416465',
+    groupImage: "group-2020-alpha.jpeg",
+    photosUrl: "https://www.facebook.com/media/set/?vanity=fogcitypack&set=a.1161377290869353",
     description: `
   <p>
     Fog City Pack celebrates FIVE YEARS of dance and deviance with a BLOWOUT bash at ALPHA 2020 on Saturday, February 29th from 10PM – 4AM. Featuring beats that will knock your jocks off by Wrecked talent, Ryan Smith—and the glory of a whole evening drenched in sound and sweat—this year's ALPHA is going to be a five-alarm fire you won't want to put out.
@@ -129,6 +129,30 @@ const data = [
     Sponsored by: Mr-S-Leather<br />
     Photo Booth by: Bradley Roberge Photography<br />
     Lighting by: Stratus Lighting
+  </p>`
+  },
+  {
+    featured: true,
+    name: "BETA 2021",
+    launchDate: "2021-06-06",
+    eventDate: "2021-07-23",
+    posterImage: "event-2021-beta-portrait.png",
+    ticketsUrl: 'https://www.eventbrite.com/e/fog-city-pack-presents-beta-2021-dore-alley-friday-tickets-158291783987',
+    description: `
+  <p>
+    THE PACK IS BACK. IN THE FLESH! It's been a LONG time & COMING. And we’re making it worth the wait.
+  </p>
+  <p>
+    Fog City Pack returns Dore Friday, July 23, 10pm-4am, back at the place where it all began: Club Six. BETA 2021 marks the SIX YEAR anniversary of Fog City Pack, and you know what to expect: our signature dark & sexy sounds, our loyal queer fetish crowd, & plenty of corners to explore on TWO floors.
+  </p>
+  <p>
+    Rest assured we'll be following all local COVID-19 guidelines, and we will be requiring proof of full vaccination within two weeks prior in order to attend the event.
+  </p>
+  <p>
+    Our first run of tickets is based on a LIMITED CAPACITY forecast. This event WILL sell out!
+  </p>
+  <p>
+    Dust off that harness and get ready to kick off Dore Weekend the way it was meant to be — with Fog City Pack at BETA 2021!
   </p>`
   }
 ]
