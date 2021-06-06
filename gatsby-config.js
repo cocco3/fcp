@@ -36,17 +36,17 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
-      options: {
-        fonts: [
-          {
-            family: 'Montserrat',
-            subsets: ['latin'],
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-prefetch-google-fonts',
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: 'Montserrat',
+    //         subsets: ['latin'],
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
