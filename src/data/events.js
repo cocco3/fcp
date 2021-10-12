@@ -109,7 +109,6 @@ const data = [
   </p>`
   },
   {
-    recent: true,
     name: "ALPHA 2020",
     launchDate: "2020-01-14",
     eventDate: "2020-02-29",
@@ -132,7 +131,7 @@ const data = [
   </p>`
   },
   {
-    featured: true,
+    // recent: true,
     name: "BETA 2021",
     launchDate: "2021-06-07",
     eventDate: "2021-07-23",
@@ -153,6 +152,32 @@ const data = [
   </p>
   <p>
     Dust off that harness and get ready to kick off Dore Weekend the way it was meant to be — with Fog City Pack at BETA 2021!
+  </p>`
+  },
+  {
+    featured: true,
+    name: "OMEGA 2021",
+    launchDate: "2021-10-11",
+    eventDate: "2021-11-20",
+    posterImage: "event-2021-omega-portrait.png",
+    ticketsUrl: 'https://www.eventbrite.com/e/fog-city-pack-presents-omega-2021-featuring-manu-miran-tickets-186331431327',
+    description: `
+  <p>
+    We made it y’all! It's been a wild one, and what better way to wrap it up than with your favorite Pack of wild pups! This time we’re bringing Venezuela born and New York City resident Manu Miran. With curations as sexy as he is, while paying tribute to their Venezuelan roots, it’s gonna be a night of tail wagging and hip thrusting beats that we can’t wait to share with you.
+  </p>
+  <p>
+    Lighting by Stratus Lighting
+  </p>
+  <p>
+    Headliners
+    - MANU MIRAN
+  </p>
+  <p>
+    Residents
+    - FAWKS
+    - MILOŠ
+    - JUMPR
+    - ASTRO
   </p>`
   }
 ]
