@@ -14,7 +14,7 @@ import Footer from '../Footer'
 
 import './styles.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pageClass }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="page alpha">
+      <div className={`page ${pageClass}`}>
         <div className="page_header">
           <div className="page_container">
             <Header siteTitle={data.site.siteMetadata.title} />
@@ -49,6 +49,11 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  pageClass: PropTypes.string,
+}
+
+Layout.defaultProps = {
+  pageClass: '',
 }
 
 export default Layout

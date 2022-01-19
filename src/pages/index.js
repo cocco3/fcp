@@ -17,6 +17,15 @@ function IndexPage(props) {
     featuredEvent &&
     getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
 
+  let pageClass = ''
+  if (featuredEvent.name.toLowerCase().includes('alpha')) {
+    pageClass = 'alpha'
+  } else if (featuredEvent.name.toLowerCase().includes('beta')) {
+    pageClass = 'beta'
+  } else if (featuredEvent.name.toLowerCase().includes('omega')) {
+    pageClass = 'omega'
+  }
+
   const recentEvent = eventsData.find(x => x.recent)
   const recentEventImage =
     recentEvent &&
@@ -31,14 +40,14 @@ function IndexPage(props) {
     'group-about.jpg'
   )
   const aboutThePack = `<p>
-  Fog City Pack emerged out of a network of several family-like relationships in San Francisco, California. Beginning in 2014, Alphas Turbo and Midnight first recognized each other as cousin pups, due to the close relationship between Midnight and Turbo’s original Handler. After collaring their own pups, given the degree of interconnectedness among the group and the simultaneous growth of the pup subculture in San Francisco, Turbo and Midnight formed a tightly bonded family unit.
+  Fog City Pack emerged out of a network of several family-like relationships in San Francisco, California. Beginning in 2014, Alphas Turbo and Midnight first recognized each other as cousin pups, due to the close relationship between Midnight and Turbo's original Handler. After collaring their own pups, given the degree of interconnectedness among the group and the simultaneous growth of the pup subculture in San Francisco, Turbo and Midnight formed a tightly bonded family unit.
 </p>
 <p>
   What originally united, and continues to unite, Fog City Pack is a commitment to a highly visible “chosen family” with a hierarchical structure intended to provide support and mentorship, akin to that of the “house” concept in drag culture. Through loyalty, playfulness, and service as pups, Fog City Pack seeks to foster a sense of community and sex positivity by hosting social and educational events that bring together diverse members of the kink scene and San Francisco’s larger queer community.
 </p>`
 
   return (
-    <Layout>
+    <Layout pageClass={pageClass}>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
       {featuredEvent && (
