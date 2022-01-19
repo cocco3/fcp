@@ -5,54 +5,50 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
- import React from "react"
- import PropTypes from "prop-types"
- import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
 
- import Header from "../Header"
- import Footer from "../Footer"
+import Header from '../Header'
+import Footer from '../Footer'
 
- import "./styles.css"
+import './styles.css'
 
- const Layout = ({ children }) => (
-   <StaticQuery
-     query={graphql`
-       query SiteTitleQuery {
-         site {
-           siteMetadata {
-             title
-           }
-         }
-       }
-     `}
-     render={data => (
-       <div className="page omega">
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <div className="page alpha">
+        <div className="page_header">
+          <div className="page_container">
+            <Header siteTitle={data.site.siteMetadata.title} />
+          </div>
+        </div>
 
-         <div className="page_header">
-           <div className="page_container">
-             <Header siteTitle={data.site.siteMetadata.title} />
-           </div>
-         </div>
+        <main className="page_body">
+          <div className="page_container">{children}</div>
+        </main>
 
-         <main className="page_body">
-           <div className="page_container">
-             {children}
-           </div>
-         </main>
+        <div className="page_footer">
+          <div className="page_container">
+            <Footer />
+          </div>
+        </div>
+      </div>
+    )}
+  />
+)
 
-         <div className="page_footer">
-           <div className="page_container">
-             <Footer />
-           </div>
-         </div>
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
-       </div>
-     )}
-   />
- )
-
- Layout.propTypes = {
-   children: PropTypes.node.isRequired,
- }
-
- export default Layout
+export default Layout
