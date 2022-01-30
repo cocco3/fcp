@@ -1,71 +1,62 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types'
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
-import Heading from "../../components/Heading"
-import "./styles.css"
+import Heading from '../../components/Heading'
+import './styles.css'
 
 function Feature(props) {
+  const { action, description, img, image, subtitle, title, url } = props
 
-  const {
-    action,
-    description,
-    img,
-    image,
-    subtitle,
-    title,
-    url
-  } = props
+  const Image = image || (img && <img src={img} alt={title} />)
 
-  const Image = image || (img &&
-    <img src={img} alt={title} />
-  )
+  let descriptionNode
+  if (description) {
+    if (description.trim().startsWith('<')) {
+      descriptionNode = (
+        <div dangerouslySetInnerHTML={{ __html: description }}></div>
+      )
+    } else {
+      descriptionNode = <ReactMarkdown>{description}</ReactMarkdown>
+    }
+  }
 
   return (
     <div className="feature">
       <div className="feature_wrap">
-
-        {Image &&
-          <div className="feature_img">
-            {Image}
-          </div>
-        }
+        {Image && <div className="feature_img">{Image}</div>}
 
         <div className="feature_body">
-
-          {title &&
+          {title && (
             <Heading level={3} display={3} className="feature_title">
               {title}
             </Heading>
-          }
+          )}
 
-          {subtitle &&
+          {subtitle && (
             <Heading level={4} className="feature_subtitle">
               {subtitle}
             </Heading>
-          }
+          )}
 
-          {description &&
-            <div dangerouslySetInnerHTML={{__html: description}}></div>
-          }
+          {descriptionNode}
 
-          {action && url &&
+          {action && url && (
             <p>
-              <a href={url}
+              <a
+                href={url}
                 className="btn btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                  {action}
+                {action}
               </a>
             </p>
-          }
-
+          )}
         </div>
-
       </div>
     </div>
   )
-
 }
 
 Feature.defaultProps = {
@@ -75,7 +66,7 @@ Feature.defaultProps = {
   image: null,
   subtitle: '',
   title: '',
-  url: ''
+  url: '',
 }
 
 Feature.propTypes = {
@@ -85,7 +76,7 @@ Feature.propTypes = {
   image: PropTypes.element,
   subtitle: PropTypes.string,
   title: PropTypes.string,
-  url: PropTypes.string
+  url: PropTypes.string,
 }
 
 export default Feature

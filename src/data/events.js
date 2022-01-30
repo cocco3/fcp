@@ -197,28 +197,28 @@ const data = [
   },
   {
     featured: true,
-    name: 'ALPHA 2021',
+    name: 'ALPHA 2022',
     launchDate: '2022-01-17',
-    eventDate: '2022-03-05',
+    eventDate: '2022-03-19',
     posterImage: 'event-2022-alpha-portrait.png',
     ticketsUrl:
       'https://www.eventbrite.com/e/fog-city-pack-presents-alpha-featuring-huny-tickets-240625907567',
     description: `
   <p>
-    WOOF! 2022 is here and this ALPHA we're hitting you with some sweet sweet HUNY!
+    WOOF! 2022 is here and this ALPHA we're hitting you with some sweet sweet <a href="https://www.instagram.com/hunyrocks/">HUNY</a>!
   </p>
   <p>
-    ALPHA is ON for Saturday, March 5, 10pm-4am at Club Six. Upstairs coat check + lounge OPEN = more comfort & space downstairs.
+    ALPHA is ON for Saturday, March 19, 10pm-4am at Club Six. Upstairs coat check + lounge OPEN = more comfort & space downstairs.
   </p>
   <p>
-    HUNY (Sarah Huny Young) is a DJ, event producer (Darkness is Spreading), creative director, and entertainment industry vet (VIBE, BET) with a Soul Train Award on her mantle via Soulbounce, an influential music platform which she formerly co-owned. So basically: HUNY extensively knows a good time and a good bop. Her sets are heavy on ballroom vogue beats, house, hip-hop, 90's R&B, and dancehall...but anything with a nasty beat, genre-aside, can get it, too. Residencies include Ace Hotel Pittsburgh's In the Weeds series, and day party pop-up venue ALL SUMMR.
+    HUNY (Sarah Huny Young) is a DJ, event producer (Darkness is Spreading), creative director, and entertainment industry vet (VIBE, BET) with a Soul Train Award on her mantle via Soulbounce, an influential music platform which she formerly co-owned. So basically: HUNY extensively knows a good time and a good bop. Her sets are heavy on ballroom vogue beats, house, hip-hop, 90's R&B, and dancehall… but anything with a nasty beat, genre-aside, can get it, too. Residencies include Ace Hotel Pittsburgh's In the Weeds series, and day party pop-up venue ALL SUMMR.
   </p>
   <p>
-    We're also offering our QTBIPOC rave family a reduced cost ticket should anyone need it. You can DM our instagram for the code and let your friends know as well.
+    We're also offering our QTBIPOC rave family a reduced cost ticket should anyone need it. You can DM our <a href="https://www.instagram.com/fogcitypack/">Instagram</a> for the code and let your friends know as well.
   </p>
   <p>
     Headliner
-    - HUNY
+    - <a href="https://www.instagram.com/hunyrocks/">HUNY</a>
   </p>
   <p>
     Residents
