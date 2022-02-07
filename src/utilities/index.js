@@ -1,1 +1,1 @@
-export { default as getImageFromResults } from "./getImageFromResults"
+export { default as getImageFromResults } from './getImageFromResults'

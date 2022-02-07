@@ -1,14 +1,10 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types'
+import React from 'react'
 
-import "./styles.css"
+import './styles.css'
 
 function Section(props) {
-
-  const {
-    children,
-    ...restProps
-  } = props
+  const { children, ...restProps } = props
 
   return (
     <div className="section" {...restProps}>
@@ -18,7 +14,7 @@ function Section(props) {
 }
 
 Section.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Section

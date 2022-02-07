@@ -20,15 +20,15 @@ import data from '../data/events'
 
 function EventsPage(props) {
   const featuredEvent = data.find(
-    x => x.featured && dayjs().isAfter(x.launchDate)
+    (x) => x.featured && dayjs().isAfter(x.launchDate)
   )
   const featuredEventImage =
     featuredEvent &&
     getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
 
-  const filteredPastEvents = data.filter(x => !x.featured)
+  const filteredPastEvents = data.filter((x) => !x.featured)
 
-  const groupedPastEvents = groupBy(filteredPastEvents, x =>
+  const groupedPastEvents = groupBy(filteredPastEvents, (x) =>
     dayjs(x.eventDate).year()
   )
 

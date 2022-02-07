@@ -11,13 +11,13 @@ import eventsData from '../data/events'
 
 function IndexPage(props) {
   const featuredEvent = eventsData.find(
-    x => x.featured && dayjs().isAfter(x.launchDate)
+    (x) => x.featured && dayjs().isAfter(x.launchDate)
   )
   const featuredEventImage =
     featuredEvent &&
     getImageFromResults(props.data.eventImages, featuredEvent.posterImage)
 
-  const recentEvent = eventsData.find(x => x.recent)
+  const recentEvent = eventsData.find((x) => x.recent)
   const recentEventImage =
     recentEvent &&
     getImageFromResults(props.data.groupImages, recentEvent.groupImage)

@@ -1,16 +1,10 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types'
+import React from 'react'
 
-import "./styles.css"
+import './styles.css'
 
 function Heading(props) {
-
-  const {
-    children,
-    display,
-    level,
-    ...restProps
-  } = props
+  const { children, display, level, ...restProps } = props
 
   const Element = `h${level}`
 
@@ -26,7 +20,7 @@ function Heading(props) {
 Heading.propTypes = {
   children: PropTypes.node.isRequired,
   level: PropTypes.number.isRequired,
-  display: PropTypes.number
+  display: PropTypes.number,
 }
 
 export default Heading

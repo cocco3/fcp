@@ -1,15 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import "./styles.css"
+import './styles.css'
 
 function Poster(props) {
-
-  const {
-    image,
-    name,
-    url
-  } = props
+  const { image, name, url } = props
 
   return (
     <a
@@ -27,7 +22,7 @@ function Poster(props) {
 Poster.propTypes = {
   image: PropTypes.element.isRequired,
   name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
 }
 
 export default Poster

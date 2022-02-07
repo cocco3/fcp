@@ -1,12 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 import NavItem from './NavItem'
 
-import "./styles.css"
+import './styles.css'
 
 function Nav(props) {
-
   // const {
   //   items
   // } = props
@@ -37,11 +36,11 @@ function Nav(props) {
 }
 
 Nav.propTypes = {
-  items: PropTypes.array
+  items: PropTypes.array,
 }
 
 Nav.defaultProps = {
-  items: []
+  items: [],
 }
 
 export default Nav

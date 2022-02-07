@@ -1,1 +1,1 @@
-export { default } from "./PosterGrid"
+export { default } from './PosterGrid'
