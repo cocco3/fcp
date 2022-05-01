@@ -196,7 +196,7 @@ const data = [
   </p>`,
   },
   {
-    featured: true,
+    recent: true,
     name: 'ALPHA 2022',
     launchDate: '2022-01-17',
     eventDate: '2022-03-19',
@@ -227,6 +227,27 @@ const data = [
     - <a href="http://soundcloud.com/jump_r">JUMPR</a>
     - <a href="https://soundcloud.com/milosgilic">MILOŠ</a>
   </p>`,
+  },
+
+  {
+    featured: true,
+    name: 'BETA 2022',
+    launchDate: '2022-04-30',
+    eventDate: '2022-07-29',
+    posterImage: 'event-2022-beta-portrait.png',
+    ticketsUrl:
+      'https://www.eventbrite.com/e/fog-city-pack-presents-beta-w-morenxxx-aeryn-pfaff-tickets-330954051477',
+    description: `Fog City Pack presents BETA 2022—our biggest BLOW-OUT of the year! Friday, July 29, 10pm–4am, Club Six, both floors.
+
+Headliners
+- [Morenxxx](https://soundcloud.com/morenxxx)
+- [Aeryn Pfaff](https://soundcloud.com/aerynpfaff)
+
+Fog City Pack Residents
+- [FAWKS](https://www.fawkstales.com/)
+- [ASTRO](https://soundcloud.com/astro_naughtydog)
+- [JUMPR](http://soundcloud.com/jump_r)
+- [MILOŠ](https://soundcloud.com/milosgilic)`,
   },
 ]
 
