@@ -144,7 +144,6 @@ const data = [
   </p>`,
   },
   {
-    // recent: true,
     name: 'BETA 2021',
     launchDate: '2021-06-07',
     eventDate: '2021-07-23',
@@ -169,7 +168,6 @@ const data = [
   </p>`,
   },
   {
-    recent: true,
     name: 'OMEGA 2021',
     launchDate: '2021-10-11',
     eventDate: '2021-11-20',
@@ -196,7 +194,6 @@ const data = [
   </p>`,
   },
   {
-    recent: true,
     name: 'ALPHA 2022',
     launchDate: '2022-01-17',
     eventDate: '2022-03-19',
@@ -230,7 +227,7 @@ const data = [
   },
 
   {
-    featured: true,
+    recent: true,
     name: 'BETA 2022',
     launchDate: '2022-04-30',
     eventDate: '2022-07-29',
@@ -248,6 +245,24 @@ Fog City Pack Residents
 - [ASTRO](https://soundcloud.com/astro_naughtydog)
 - [JUMPR](http://soundcloud.com/jump_r)
 - [MILOŠ](https://soundcloud.com/milosgilic)`,
+  },
+
+  {
+    featured: true,
+    name: 'OMEGA 2022',
+    launchDate: '2022-10-13',
+    eventDate: '2022-11-19',
+    // posterImage: 'event-2022-omega-portrait.png',
+    ticketsUrl:
+      'https://www.eventbrite.com/e/fog-city-pack-presents-omega-feat-madison-moore-tickets-431206699847',
+    description: `
+The Pack rounds out its triad of annual depravity back at Club Six on SATURDAY, NOVEMBER 19, 10pm–4am. Upstairs Lounge Bar + Clothes Check by Pedal Pups. Downstairs for the classic dancefloor & deviance you've come to expect from Fog City Pack.
+
+Featuring the incomparable [madison moore](https://www.madisonmooreonline.com/) ([soundcloud](https://soundcloud.com/madison-alexander-moore)), artist-scholar & leader in Black queer nightlife. Born and raised in Ferguson, Missouri, madison moore is a polymath: a professor of gender studies, author of a New York Times celebrated book on fabulousness, and a burgeoning artist on the global queer techno scene. His sassy, energetic sets are known for bringing the flavors of hard techno, house, ghetto tech, vogue beats, disco and dub techno to the dance floor. After moving to London in 2014, madison quickly became a regular on the London scene and co-founded OPULENCE, a queer techno collective that was featured in Last Dance, a short film about London nightlife released by 4:3/Boiler Room. Since 2014, madison has played clubs in London, Amsterdam, Berlin, Bristol, New York, and has shared the decks with the likes of Boris, Machine Woman, Samuel Kerridge, SPFDJ, Roy Perez and Object Blue. Fog City Pack is thrilled to bring him to San Francisco!
+
+Also featuring residents [Astro](https://soundcloud.com/astro_naughtydog) | [Fawks](https://www.fawkstales.com/) | [Free Son](https://soundcloud.com/freesonmg) | [Jumpr](http://soundcloud.com/jump_r).
+
+Get ready for the INFERNO of the year in the DEPTHS at OMEGA!`,
   },
 ]
 
