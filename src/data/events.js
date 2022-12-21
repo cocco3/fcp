@@ -193,6 +193,7 @@ const data = [
     - ASTRO
   </p>`,
   },
+
   {
     name: 'ALPHA 2022',
     launchDate: '2022-01-17',
@@ -227,7 +228,6 @@ const data = [
   },
 
   {
-    recent: true,
     name: 'BETA 2022',
     launchDate: '2022-04-30',
     eventDate: '2022-07-29',
@@ -248,7 +248,7 @@ Fog City Pack Residents
   },
 
   {
-    featured: true,
+    recent: true,
     name: 'OMEGA 2022',
     launchDate: '2022-10-13',
     eventDate: '2022-11-19',
@@ -263,6 +263,32 @@ Featuring the incomparable [madison moore](https://www.madisonmooreonline.com/) 
 Also featuring residents [Astro](https://soundcloud.com/astro_naughtydog) | [Fawks](https://www.fawkstales.com/) | [Free Son](https://soundcloud.com/freesonmg) | [Jumpr](http://soundcloud.com/jump_r).
 
 Get ready for the INFERNO of the year in the DEPTHS at OMEGA!`,
+  },
+
+  {
+    featured: true,
+    name: 'ALPHA 2023',
+    launchDate: '2022-12-20',
+    eventDate: '2023-02-25',
+    // posterImage: 'event-2023-alpha-portrait.png',
+    ticketsUrl:
+      'https://www.eventbrite.com/e/fog-city-pack-presents-alpha-w-sister-zo-tickets-488256256607',
+    description: `
+Fog City Pack celebrates 7 years of earthly delights with ALPHA on Saturday, February 25, 2023.
+
+Unearth someone’s delicate flower, take a sniff and float off into a kinky eden—where the echoing primal sounds of Techno hypnotize and rouse you to dance all night long!
+
+Featuring the San Francisco debut of [Sister Zo](https://ra.co/dj/sisterzo)
+
+Kansas City-born, now based in Brooklyn Zoey Shopmaker, aka Sister Zo, has long been on a path entirely her own.
+
+Starting out performing at underground poetry events in her hometown, she eventually moved on to playing live beat sets during open mic nights at one of KC's most pivotal queer nightlife institutions of the 21st century, the Uptown Arts Bar. There she got her first taste of the sounds of the UK bass continuum and the LA beat scene.
+
+In October 2017, Sister Zo and her friends Mazzy Mann and Lorelei Kretsinger founded [UN/TUCK](https://www.instagram.com/untuckaudio/) the queer/trans collective and record label. Over the next two years, they tirelessly built UN/TUCK into an internationally recognized platform, releasing their own music and organizing shows and parties curated specifically for trans and queer people in Kansas City.
+
+Sister Zo has made definitive creative statements in 2022, releasing her debut EP, Screw Cheek, on acclaimed UK club label, Scuffed Recordings, and a follow-up EP, Freak Shift, on Martyn's hallowed 3024 imprint. With bookings at clubs like Bunker NY, Texture Detroit, Sole Rehab, Nowadays, Good Room and Kremwerk; festivals like Slingshot and Honcho Campout with tracks and mixes that both seamlessly capture AND defy her genres of interest, it's clear that Sister Zo has firmly solidified her place as an emerging artist in her own right.
+
+Also featuring residents [Astro](https://soundcloud.com/astro_naughtydog) | [Fawks](https://www.fawkstales.com/) | [Free Son](https://soundcloud.com/freesonmg) | [Jumpr](http://soundcloud.com/jump_r).`,
   },
 ]
 

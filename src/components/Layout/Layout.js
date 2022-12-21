@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={(data) => (
-      <div className={'page omega'}>
+      <div className={'page alpha'}>
         <div className="page_header">
           <div className="page_container">
             <Header siteTitle={data.site.siteMetadata.title} />
